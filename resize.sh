@@ -16,7 +16,7 @@ LIVRE_PARTED=$(grep "Free Space" /tmp/initial_parted.log |grep "GB" | awk '{prin
 PARTIÇÃO=$(df -h | egrep "sda"| awk '{print $1}')
 NUMERO_DE_PART=$(cat /tmp/initial_parted.log | grep "ext"|awk '{print $1}')
 
-
+echo -e "${YELLOW}amarelo${RESET}
 
 echo -e "${YELLOW}Você possui ${RESET}${GREEN}${ESPAÇO_LIVRE}${RESET}${YELLOW} livres na sua partição ${RED}${PARTIÇÃO}${RESET}.\n"
 
