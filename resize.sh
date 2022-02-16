@@ -14,7 +14,7 @@ PARTED=$(echo print free | parted > /tmp/initial_parted.log)
 ESPACO_LIVRE=$(df -h | grep "sda"| awk '{print $4}'> /tmp/initial_df.log && cat /tmp/initial_parted.log)
 LIVRE_PARTED=$(echo grep "Free Space" /tmp/initial_parted.log |grep "GB" | awk '{print $3}')
 PARTITION=$(df -h | grep "sda"| awk '{print $1}' > /tmp/initial_partition.log && cat /tmp/initial_partition.log)
-NUMERO_DE_PART=$(grep "ext"/tmp/initial_parted.log|awk '{print $1}')
+NUMERO_DE_PART=$(grep "ext" /tmp/initial_parted.log |awk '{print $1}')
 
 echo ${PARTED}
 echo -e "${YELLOW}Você possui ${RESET}${GREEN}${ESPACO_LIVRE}${RESET}${YELLOW} livres na sua partição ${RED}${PARTITION}${RESET}.\n"
