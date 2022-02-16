@@ -11,10 +11,10 @@ RED_ALERT="\e[41m"
 
 #Variaveis
 PARTED=$(echo print free | parted > /tmp/initial_parted.log)
-ESPAÇO_LIVRE=(df -h | egrep "sda"| awk '{print $4}')
-LIVRE_PARTED=(grep "Free Space" /tmp/initial_parted.log |grep "GB" | awk '{print $3}')
-PARTIÇÃO=(df -h | egrep "sda"| awk '{print $1}')
-NUMERO_DE_PART=(cat /tmp/initial_parted.log | grep "ext"|awk '{print $1}')
+ESPAÇO_LIVRE=$(df -h | egrep "sda"| awk '{print $4}')
+LIVRE_PARTED=$(grep "Free Space" /tmp/initial_parted.log |grep "GB" | awk '{print $3}')
+PARTIÇÃO=$(df -h | egrep "sda"| awk '{print $1}')
+NUMERO_DE_PART=$(cat /tmp/initial_parted.log | grep "ext"|awk '{print $1}')
 
 
 
