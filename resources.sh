@@ -17,7 +17,8 @@ ${UPTIME}\n\n
 +++++ VCPU ++++++\n
 +++++++++++++++++\n
 Quantidade de vcpu: ${VCPU}\n\n
-+ ESPAÇO EM DISCO +\n
++++++++++++++++++++\n
+  + ESPAÇO EM DISCO +\n
 +++++++++++++++++++\n
 ${ESPACO}\n\n
 ++++++++++++++++++\n
