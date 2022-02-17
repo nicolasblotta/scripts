@@ -12,17 +12,17 @@ echo -e "
 ++++++++++++++++++\n
 +++++ UPTIME +++++\n
 ++++++++++++++++++\n
-${UPTIME}\n\n\n
+${UPTIME}\n\n\n\n
 +++++++++++++++++\n
 +++++ VCPU ++++++\n
 +++++++++++++++++\n
-Quantidade de vcpu: ${VCPU}\n\n
+Quantidade de vcpu: ${VCPU}\n\n\n\n
 +++++++++++++++++++\n
   + ESPAÇO EM DISCO +\n
 +++++++++++++++++++\n
-${ESPACO}\n\n
+${ESPACO}\n\n\n\n
 ++++++++++++++++++\n
 +++++ MEMORIA ++++\n
 ++++++++++++++++++\n
-Quantidade de memoria: ${MEM} Gb\n\n
+Quantidade de memoria: ${MEM} Gb\n\n\n\n
 O IP da sua máquina é: ${IP}\n"
