@@ -19,7 +19,6 @@ NUMERO_DE_PART=$(grep "ext" /tmp/initial_parted.log |awk '{print $1}')
 echo ${PARTED}
 echo -e "${YELLOW}Você possui ${RESET}${GREEN}${ESPACO_LIVRE}${RESET}${YELLOW} livres na sua partição ${RED}${PARTITION}${RESET}.\n"
 echo -e "${YELLOW}Esse valor pode ser extendido até ${RESET}${GREEN}${LIVRE_PARTED}${RESET}\n\n"
-#echo -e "${YELLOW} Deseja extender completamente? Yes/No${RESET}.\n\n"
   read -r "Deseja extender completamente? Yes/No" resposta
         if [[ "$resposta" == "yes" ]] ; then
           echo -e "${GREEN}[OK] ${RESET}${YELLOW} Realizando resize da partição.. ${RESET}${RED}${PARTITION}${RESET}"
