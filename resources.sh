@@ -8,10 +8,10 @@ MEM=`python3 -c "import os;print(int(round(os.sysconf('SC_PAGE_SIZE') * os.sysco
 
 
 echo -e "\n++++++++++++++++++\n+++++ UPTIME +++++\n++++++++++++++++++;
-${UPTIME}++++++++++++++++++";
+${UPTIME}\n++++++++++++++++++
 \n+++++++++++++++++\n+++++ VCPU ++++++\n+++++++++++++++++\n
 Quantidade de vcpu: ${VCPU}
 \n+++++++++++++++++++\n+ ESPAÇO EM DISCO +\n+++++++++++++++++++ 
 ${ESPACO}
 \n++++++++++++++++++\n+++++ MEMORIA ++++\n++++++++++++++++++\nQuantidade de memoria: ${MEM} Gb\n
-\nO IP da sua máquina é: ${IP}\n
+\nO IP da sua máquina é: ${IP}\n"
